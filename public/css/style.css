@@ -166,7 +166,8 @@
   height: auto;
   background-color: black;
   color: white;
-  margin-top: 2rem;
+  margin: 2rem 0 0 0;
+  
   /* padding-bottom: 2rem; */
   width: 100%;
 }
@@ -281,7 +282,7 @@
 @media(max-width:425px) {
 
    #presentacion{
-    width: 22rem;
+    width: 24rem;
   }
   #frontEnd,
   #backEnd,
@@ -290,10 +291,10 @@
     width: 18rem;
   }
   #skills {
-    width: 21rem;
+    width: 23rem;
   }
    #proyectos{
-    width: 22rem;
+    width: 24rem;
   } 
 }
 @media(min-width:768px) {

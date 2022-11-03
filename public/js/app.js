@@ -81,11 +81,9 @@ function consoleText(words, id, colors) {
     email.value = '';
     subject.value = '';
     message.value = '';
-     console.log(response);
    })
    .catch(function (error) {
-    alert('an error ocurred', error)
-     console.log(error);
+    alert('an error ocurred', error);
    });
  });
 
