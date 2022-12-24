@@ -4,7 +4,6 @@ if(process.env.NODE_ENV !== 'production') {
 const express = require('express');
 const path = require('path');
 const app = express();
-const nodemailer = require('nodemailer');
 const ejsMate = require('ejs-mate');
 const session = require('express-session');
 const flash = require('connect-flash');
@@ -44,32 +43,4 @@ app.get('/', (req,res) => {
     
     res.render("routes/homeEng");
 });
-
-
-app.post('/', async (req,res,next) => {
-    try{
-     const transporter = nodemailer.createTransport({
-         service: 'gmail',
-         auth: {
-             user: process.env.GMAIL_USER,
-             pass: process.env.GMAIL_PASSWORD
-         }
-     })
-     const mailOptions = {
-         from: req.body.email,
-         to: 'omarcitofc2001@gmail.com',
-         subject: `Message from ${req.body.email}: ${req.body.subject} `,
-         text: req.body.message
-     }
-    
-    let info = await transporter.sendMail(mailOptions);
-    req.flash('success', 'Email sent successfully');
-    console.log(req.flash.success)
-    res.redirect('/');
-    
-    }   catch(e){
-        console.log(e);
-        next(e);
-    }
-})
 
