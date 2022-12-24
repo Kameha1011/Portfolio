@@ -151,4 +151,8 @@ body{
     width: auto;
     height: 4rem;
   }
+  .console-container {
+    font-size: 2em;
+  }
+  
 }
