@@ -6,7 +6,7 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
 // animacion terminal text
 
-consoleText(['Web Developer', 'Console Text', 'Made with Love.'], 'text',['green','rebeccapurple','lightblue']);
+consoleText(["I'm Omar","I'm a Web Developer", 'Made with Love.'], 'text',['green','rebeccapurple','lightblue']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -57,35 +57,27 @@ function consoleText(words, id, colors) {
   }, 400)
 }
 
-//form
- const contactForm = document.querySelector('.contact-form');
+//Bootstrap Validation
 
- let fName = document.getElementById('name');
- let email = document.getElementById('email');
- let subject = document.getElementById('subject');
- let message = document.getElementById('message');
+(function () {
+  'use strict'
 
-  contactForm.addEventListener('submit', e =>{ 
-    e.preventDefault(); 
-    let formData = {
-      name: fName.value,
-      email: email.value,
-      subject: subject.value,
-      message: message.value
-  }
-   axios.post('/', formData)
-   
-   .then(function (response) {
-    alert('Mail Sent')
-    fName.value = '';
-    email.value = '';
-    subject.value = '';
-    message.value = '';
-   })
-   .catch(function (error) {
-    alert('an error ocurred', error);
-   });
- });
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
 
 
 
