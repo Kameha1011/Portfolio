@@ -1,4 +1,5 @@
 .floatingSidebar {
+  z-index: 1;
   position: fixed;
   top: 50%;
   bottom: 50%;
@@ -28,6 +29,9 @@
   color: rgb(92, 131, 116, 0.4);
   font-size: 2rem;
   cursor: pointer;
+}
+.floatingSidebar__toggle:focus-visible {
+  outline: none;
 }
 .floatingSidebar__toggle--open {
   color: #5c8374;

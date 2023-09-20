@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { FloatingSideBarItem } from "./FloatingSideBarItem/FloatingSideBarItem";
-import { sideBarItems } from "../../constants/sideBarItems";
+import { SIDEBAR_ITEMS } from "../../constants/sideBarItems";
 import "./FloatingSideBar.css";
 export const FloatingSideBar: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -12,7 +12,7 @@ export const FloatingSideBar: React.FC = () => {
   return (
     <nav className={`floatingSidebar ${open && "floatingSidebar--open"}`}>
       <ul className="floatingSidebar__list">
-        {sideBarItems.map((item) => (
+        {SIDEBAR_ITEMS.map((item) => (
           <FloatingSideBarItem key={item.title} {...item} />
         ))}
       </ul>

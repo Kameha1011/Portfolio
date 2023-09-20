@@ -5,7 +5,7 @@ import {
   FaGraduationCap,
   FaEnvelopeOpenText,
 } from "react-icons/fa";
-export const sideBarItems = [
+export const SIDEBAR_ITEMS = [
   {
     title: "About",
     icon: <FaUserAlt />,
@@ -26,4 +26,4 @@ export const sideBarItems = [
     title: "Contact",
     icon: <FaEnvelopeOpenText />,
   },
-];
+] as const;

@@ -1,0 +1,65 @@
+.experienceItemModal__bg {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
+.experienceItemModal {
+  background-color: #183d3d;
+  color: #fff;
+  width: 18rem;
+  height: 30rem;
+  z-index: 4;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.experienceItemModal__header,
+.experienceItemModal__body,
+.experienceItemModal__footer {
+  width: 100%;
+}
+.experienceItemModal__header{
+    height: 20%;
+}
+.experienceItemModal__body{
+    height: 65%;
+    padding: .5rem;
+}
+.experienceItemModal__footer{
+    height: 15%;
+}
+.experienceItemModal__title {
+  font-family: "Playfair Display";
+  font-size: 2rem;
+}
+.experienceItemModal__date{
+    margin-top: .5rem;
+    font-size: .8rem;
+}
+.experienceItemModal__list{
+  padding: .5rem;
+}
+.experienceItemModal__button{
+    background-color: #93B1A6;
+    border: 2px solid #5C8374;
+    border-radius: 1rem;
+    padding: .7rem;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.experienceItemModal__button:hover{
+    background-color: #5C8374;
+    border: 2px solid #93B1A6;
+}
