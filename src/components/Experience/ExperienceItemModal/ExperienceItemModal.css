@@ -23,6 +23,7 @@
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
+  animation: .25s cubic-bezier(.25, 1, .30, 1) square-in-center both;
 }
 .experienceItemModal__header,
 .experienceItemModal__body,
@@ -62,4 +63,25 @@
 .experienceItemModal__button:hover{
     background-color: #5C8374;
     border: 2px solid #93B1A6;
+}
+
+@keyframes square-in-center {
+  from {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes square-out-center {
+  from {
+    clip-path: inset(0 0 0 0);
+  }
+  to {
+    clip-path: inset(100% 100% 100% 100%);
+  }
+}
+
+[transition-style="out:square:center"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-out-center both;
 }
