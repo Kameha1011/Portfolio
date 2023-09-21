@@ -3,6 +3,7 @@ import { GoLinkExternal } from "react-icons/go";
 import { PROJECTS } from "../../constants/projects";
 import "./Projects.css";
 export const Projects: React.FC = () => {
+  //TODO: put a tooltip for the icons
   return (
     <section className="projects">
       <h2 className="projects__title">Projects</h2>
@@ -21,9 +22,10 @@ export const Projects: React.FC = () => {
             <h2 className="card__title">{project.title}</h2>
             <div className="card__icons">
               {project.technologiesIcons.map((icon, i) => (
-                <span key={i} className="card__icon">
-                  {icon}
-                </span>
+                  <span className="card__icon" key={i}>
+                    {icon.icon}
+                    <span className="card__tooltip">{icon.name}</span>                
+                  </span>
               ))}
             </div>
           </div>
