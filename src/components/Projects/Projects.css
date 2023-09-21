@@ -1,0 +1,79 @@
+.projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #e5e5e5;
+}
+.projects__title {
+  font-family: "Playfair Display";
+  font-size: 3rem;
+  color: #183d3d;
+}
+.projects__card {
+  background-color: #183d3d;
+  color: #fff;
+  border-radius: 0.7rem;
+  width: 80%;
+}
+.card__image {
+  border-radius: 0.7rem 0.7rem 0 0;
+  width: 100%;
+}
+.card__body {
+  padding: 0.7rem;
+}
+.card__title {
+  font-family: "Playfair Display";
+  font-size: 2rem;
+}
+.card__icons {
+  width: 100%;
+  background-color: #5c8374;
+  color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.7rem;
+  padding: 0.7rem;
+  margin: 1rem 0 1rem 0;
+}
+.card__icon {
+  font-size: 2.5rem;
+}
+.card__actions {
+  width: 100%;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.card__button {
+    border-radius: 1rem;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.card__button--view {
+  background-color: #93b1a6;
+  border: 2px solid #5c8374;
+  color: #000;
+ 
+}
+.card__button--view:hover  {
+    background-color: #5C8374;
+    border: 2px solid #93B1A6;
+}
+.card__button--github  {
+  background-color: #5c8374;
+  border: 2px solid #93b1a6;
+}
+.card__button--github:hover {
+    background-color: #93b1a6;
+    border: 2px solid #5c8374;
+}
