@@ -1,4 +1,5 @@
 import './App.css'
+import { Education } from './components/Education/Education'
 import { Experience } from './components/Experience/Experience'
 import { FloatingSideBar } from './components/FloatingSideBar/FloatingSideBar'
 import { Header } from './components/Header/Header'
@@ -12,6 +13,7 @@ export const App: React.FC = () => {
       <main>
         <Experience />
         <Projects />
+        <Education />
       </main>
     </>
   )
