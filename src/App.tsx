@@ -3,6 +3,7 @@ import { Contact } from "./components/Contact/Contact";
 import { Education } from "./components/Education/Education";
 import { Experience } from "./components/Experience/Experience";
 import { FloatingSideBar } from "./components/FloatingSideBar/FloatingSideBar";
+import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { Projects } from "./components/Projects/Projects";
 export const App: React.FC = () => {
@@ -16,6 +17,7 @@ export const App: React.FC = () => {
         <Education />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 };
