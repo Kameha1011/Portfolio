@@ -2,22 +2,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 1rem;
   min-height: 100vh;
-  color: #fff;
-  background-color: #040d12;
+  color: #040d12;
+  background-color: #e5e5e5;
   text-align: center;
 }
 .header__image {
   width: 200px;
   height: 260px;
-  border: 1rem solid #93b1a6;
+  border: 1rem solid #183d3d;
+}
+.header__body {
+  padding: 2rem;
 }
 .header__title {
   font-family: "Playfair Display";
   font-size: 3rem;
-  color: #93b1a6;
+  color: #183d3d;
 }
 .header__subtitle {
   margin-bottom: 1rem;
+}
+
+@media (min-width: 760px) {
+  .header {
+    min-height: 80vh;
+    flex-direction: row-reverse;
+    font-size: 1.4rem;
+  }
+  .header__body{
+    text-align: start;
+  }
+  .header__title {
+    font-size: 3.5rem;
+  }
+  .header__image {
+    height: 400px;
+    width: 350px;
+  }
+}
+
+@media (min-width: 1024px){
+  .header__image{
+    height: 600px;
+    width: 550px;
+  }
 }

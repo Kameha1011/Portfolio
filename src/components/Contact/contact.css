@@ -19,6 +19,7 @@
 }
 .form__input {
   height: 2rem;
+  width: 100%;
   border-radius: 2rem;
   border: none;
   padding: 0.7rem;
@@ -55,4 +56,33 @@
   padding: 0.4rem;
   border: none;
   background-color: #183d3d;
+  cursor: pointer;
+}
+
+.form__submit:hover{
+  background-color: #93b1a6;
+  color: #040d12;
+}
+
+@media (min-width: 425px) {
+  .form {
+    width: 70%;
+  }
+  .form__submit {
+    padding: 0.7rem;
+    width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .form {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .contact{
+    min-height: 40vh;
+  }
+  .form {
+    width: 30%;
+  }
 }

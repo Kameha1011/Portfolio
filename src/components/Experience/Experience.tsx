@@ -21,26 +21,27 @@ export const Experience: React.FC = () => {
       <section className="experience">
         <h2 className="experience__title">Experience</h2>
         <div className="experience__timeline">
-          <div className="experience__stick"></div>
-          {EXPERIENCES.map((experience, i) => (
-            <div
-              className={`experience__item experience__item--${
-                i % 2 === 0 ? "left" : "right"
-              }`}
-              key={i}
-            >
-              <h4>{experience.company}</h4>
-              <p>{experience.period}</p>
-              <p
-                className="experience__itemLink"
-                onClick={() => {
-                  openModal(experience);
-                }}
+          <div className="experience__stick">
+            {EXPERIENCES.map((experience, i) => (
+              <div
+                className={`experience__item experience__item--${
+                  i % 2 === 0 ? "left" : "right"
+                }`}
+                key={i}
               >
-                View More <AiOutlineRight />
-              </p>
-            </div>
-          ))}
+                <h4>{experience.company}</h4>
+                <p>{experience.period}</p>
+                <p
+                  className="experience__itemLink"
+                  onClick={() => {
+                    openModal(experience);
+                  }}
+                >
+                  View More <AiOutlineRight />
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
       {isOpen && (
