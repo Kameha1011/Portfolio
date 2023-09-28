@@ -5,7 +5,7 @@ import "./Projects.css";
 export const Projects: React.FC = () => {
   return (
     <section className="projects">
-      <h2 className="projects__title">Projects</h2>
+      <h2 className="section__title">Projects</h2>
       <article className="projects__cardContainer">
         {PROJECTS.map((project, i) => (
           <article className="projects__card" key={i}>

@@ -6,11 +6,6 @@
   gap: 1rem;
   background-color: #e5e5e5;
 }
-.projects__title {
-  font-family: "Playfair Display";
-  font-size: 3rem;
-  color: #183d3d;
-}
 .projects__cardContainer {
   display: flex;
   gap: 1rem;
@@ -22,7 +17,7 @@
   color: #fff;
   border-radius: 0.7rem;
   width: 80%;
-  height: 440px;
+  height: 550px;
 }
 .card__header {
   height: 35%;
@@ -32,10 +27,11 @@
   height: 100%;
 }
 .card__body {
-  height: 50%;
+  height: 40%;
 }
 .card__footer {
-  height: 15%;
+  padding: .7rem;
+  height: 25%;
 }
 .card__image {
   border-radius: 0.7rem 0.7rem 0 0;
@@ -45,9 +41,9 @@
   padding: 0.7rem;
 }
 .card__title {
-  font-family: "Playfair Display";
   font-size: 2rem;
   height: 50%;
+  text-align: center;
 }
 .card__icons {
   width: 100%;

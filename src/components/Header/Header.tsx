@@ -5,7 +5,7 @@ export const Header: React.FC = () => {
     <header className="header">
       <img src={image} alt="profile picture" className="header__image" />
       <section className="header__body">
-        <h1 className="header__title">Omar Flores</h1>
+        <h1 className="section__title">Omar Flores</h1>
         <h3 className="header__subtitle">Full Stack Web Developer</h3>
         <p>
           <i>

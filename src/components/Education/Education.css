@@ -6,12 +6,6 @@
   flex-direction: column;
   align-items: center;
 }
-.education__title {
-  font-family: "Playfair Display";
-  font-size: 3rem;
-  color: #183d3d;
-}
-
 .tabview {
   margin-top: 1rem;
   width: 100%;

@@ -6,10 +6,20 @@
   font-family: "Lato";
   src: url("./assets/fonts/Lato/Lato-Regular.ttf");
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato";
 }
+.section__title {
+  font-family: "Playfair Display";
+  font-size: 3rem;
+  color: #183d3d;
+}
 
+@media (min-width: 1024px) {
+  .section__title {
+    font-size: 4rem;
+  }
+}

@@ -4,7 +4,7 @@ import udemy from "../../assets/images/education/udemy.png";
 import mindhub from "../../assets/images/education/mindhub.png";
 import "./Education.css";
 export const Education: React.FC = () => {
-  const [toggleTab, setToggleTab] = useState(true);
+  const [toggleTab, setToggleTab] = useState(false);
   const showCompleted = () => {
     setToggleTab(false);
   };
@@ -13,7 +13,7 @@ export const Education: React.FC = () => {
   };
   return (
     <section className="education">
-      <h2 className="education__title">Education</h2>
+      <h2 className="section__title">Education</h2>
       <div className="tabview">
         <div className="tabview__titles">
           <h3

@@ -19,7 +19,7 @@ export const Experience: React.FC = () => {
   return (
     <>
       <section className="experience">
-        <h2 className="experience__title">Experience</h2>
+        <h2 className="section__title">Experience</h2>
         <div className="experience__timeline">
           <div className="experience__stick">
             {EXPERIENCES.map((experience, i) => (

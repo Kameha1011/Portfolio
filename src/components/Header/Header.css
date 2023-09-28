@@ -17,11 +17,6 @@
 .header__body {
   padding: 2rem;
 }
-.header__title {
-  font-family: "Playfair Display";
-  font-size: 3rem;
-  color: #183d3d;
-}
 .header__subtitle {
   margin-bottom: 1rem;
 }
