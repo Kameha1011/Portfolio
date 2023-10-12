@@ -28,6 +28,9 @@
   font-size: 1.3rem;
   font-style: italic;
 }
+.carousel__itemPeriod{
+  font-size: 1.2rem;
+}
 .carousel__itemLink{
   margin-top: 1rem;
   display: inline;

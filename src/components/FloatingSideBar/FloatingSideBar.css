@@ -1,8 +1,9 @@
 .floatingSidebar {
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   top: 50%;
   bottom: 50%;
+  transform: translateY(-50%);
   left: -120px;
   display: flex;
   align-items: center;
@@ -27,8 +28,9 @@
   border: none;
   background-color: transparent;
   color: rgb(92, 131, 116, 0.4);
-  font-size: 2rem;
+  font-size: 4rem;
   cursor: pointer;
+  z-index: 2;
 }
 .floatingSidebar__toggle:focus-visible {
   outline: none;
@@ -48,6 +50,6 @@
 @media(min-width: 768px) {
   .floatingSidebar__toggle {
     left: 4rem;
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 }

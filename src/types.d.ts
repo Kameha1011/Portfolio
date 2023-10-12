@@ -11,6 +11,7 @@ export type Education = {
   alt: string;
   title: string;
   grade: string;
+  period: MonthYear | `${MonthYear} - Present`;
   certificate?: `https://www.${string}`;
 }
 

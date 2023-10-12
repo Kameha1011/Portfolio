@@ -11,6 +11,7 @@ export const EDUCATION: ReadonlyArray<Education> = [
     alt: "UBA",
     title: "Universidad de Buenos Aires",
     grade: "Computer Science Engineering",
+    period: "03/2022 - Present"
   },
   {
     src: udemy,
@@ -19,6 +20,7 @@ export const EDUCATION: ReadonlyArray<Education> = [
     grade: "Full Stack Web Developer",
     certificate:
       "https://www.udemy.com/certificate/UC-35e104ad-dfc1-47dd-803b-6f67bbc4908b/",
+    period: '12/2022'
   },
   {
     src: elearning1,
@@ -27,6 +29,7 @@ export const EDUCATION: ReadonlyArray<Education> = [
     grade: "Full Stack Web Developer",
     certificate:
       "https://www.credly.com/badges/394edbbc-3bd3-4081-a847-ee01b9b29bae/linked_in_profile",
+    period: '09/2023'
   },
   {
     src: elearning2,
@@ -35,11 +38,13 @@ export const EDUCATION: ReadonlyArray<Education> = [
     grade: "Frontend Web Developer",
     certificate:
       "https://www.credly.com/badges/1c92ab8e-913b-49f3-b5d5-e4967a49b0f4/public_url",
+    period: '04/2023'
   },
   {
     src: ap,
     alt: "AP",
     title: "Argentina Programa",
     grade: "Full Stack Web Developer",
+    period: "06/2022"
   }
 ] as const;

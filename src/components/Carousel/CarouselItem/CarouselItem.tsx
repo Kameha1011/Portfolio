@@ -24,6 +24,7 @@ export const CarouselItem: React.FC<Props> = ({
       <div className="carousel__itemShade">
         <h2 className="carousel__itemTitle">{items.title}</h2>
         <h3 className="carousel__itemSubtitle">{items.grade}</h3>
+        <p className="carousel__itemPeriod">{items.period}</p>
         {items.certificate && (
           <a
             href={items.certificate}
