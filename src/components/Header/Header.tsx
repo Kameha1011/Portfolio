@@ -3,7 +3,9 @@ import "./Header.css";
 export const Header: React.FC = () => {
   return (
     <header className="header">
-      <img src={image} alt="profile picture" className="header__image" />
+      <figure className="header__figure">
+        <img src={image} alt="profile picture" className="header__image" />
+      </figure>
       <section className="header__body">
         <h1 className="section__title">Omar Flores</h1>
         <h3 className="header__subtitle">Full Stack Web Developer</h3>

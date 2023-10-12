@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
 }
+/* 
 .tabview {
   margin-top: 1rem;
   width: 100%;
@@ -39,8 +40,16 @@
 .tabview__item:nth-child(even) {
   background-color: #5c8374;
 }
+.tabview__itemInfo {
+  width: 60%;
+}
+.tabview__itemFigure {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
 .tabview__itemImage {
-  width: 100px;
+  max-width: 150px;
   height: 100%;
 }
 
@@ -61,4 +70,20 @@
   .education {
     min-height: 50vh;
   }
+  .tabview__itemInfo {
+    width: 70%;
+  }
+  .tabview__itemFigure {
+    width: 30%;
+  }
 }
+
+@media (min-width: 1024px) {
+  .tabview__itemInfo {
+    width: 80%;
+  }
+  .tabview__itemFigure {
+    width: 15%;
+  }
+}
+ */

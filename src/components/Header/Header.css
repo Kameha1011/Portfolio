@@ -9,13 +9,17 @@
   background-color: #e5e5e5;
   text-align: center;
 }
+.header__figure{
+  width: 100%;
+}
 .header__image {
-  width: 200px;
+  width: 260px;
   height: 260px;
-  border: 1rem solid #183d3d;
+  border-radius: 100%;
+  object-fit: cover;
 }
 .header__body {
-  padding: 2rem;
+  padding: 1rem;
 }
 .header__subtitle {
   margin-bottom: 1rem;
@@ -25,23 +29,32 @@
   .header {
     min-height: 80vh;
     flex-direction: row-reverse;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    padding: 2rem;
+    width: 100%;
   }
   .header__body{
+    width: 60%;
     text-align: start;
+  }
+  .header__figure{
+    width: 40%;
   }
   .header__title {
     font-size: 3.5rem;
   }
   .header__image {
-    height: 400px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
   }
 }
 
 @media (min-width: 1024px){
+  .header__body{
+    width: 50%;
+  }
   .header__image{
-    height: 600px;
-    width: 550px;
+    height: 400px;
+    width: 400px;
   }
 }

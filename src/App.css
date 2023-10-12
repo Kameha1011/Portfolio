@@ -12,6 +12,9 @@
   box-sizing: border-box;
   font-family: "Lato";
 }
+body {
+  overflow-x: hidden;
+}
 .section__title {
   font-family: "Playfair Display";
   font-size: 3rem;
