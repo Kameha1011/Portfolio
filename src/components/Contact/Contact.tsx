@@ -14,7 +14,7 @@ export const Contact: React.FC = () => {
   };
   return (
     <>
-      <section className="contact">
+      <section className="contact" id='Contact'>
         <h2 className="contact__title">Contact</h2>
         <form ref={form} className="form" onSubmit={submitForm}>
           <label htmlFor="user_name" className="form__group">

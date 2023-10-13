@@ -2,7 +2,7 @@ import image from "../../assets/images/omar.webp";
 import "./Header.css";
 export const Header: React.FC = () => {
   return (
-    <header className="header">
+    <header className="header" id="About">
       <figure className="header__figure">
         <img src={image} alt="profile picture" className="header__image" />
       </figure>

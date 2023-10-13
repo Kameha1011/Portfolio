@@ -18,7 +18,7 @@ export const Experience: React.FC = () => {
   };
   return (
     <>
-      <section className="experience">
+      <section className="experience" id="Experience">
         <h2 className="section__title">Experience</h2>
         <div className="experience__timeline">
           <div className="experience__stick">

@@ -4,7 +4,7 @@ import { PROJECTS } from "../../constants/projects";
 import "./Projects.css";
 export const Projects: React.FC = () => {
   return (
-    <section className="projects">
+    <section className="projects" id="Projects">
       <h2 className="section__title">Projects</h2>
       <article className="projects__cardContainer">
         {PROJECTS.map((project, i) => (
