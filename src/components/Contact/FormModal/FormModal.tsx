@@ -5,7 +5,7 @@ interface Props {
   ref: React.RefObject<HTMLDialogElement>;
 }
 
-export const FormModal: React.FC<Props> = forwardRef<HTMLDialogElement, Props>(
+export const FormModal = forwardRef<HTMLDialogElement, Props>(
   (props: Props, ref) => {
     const { closeModal, closeModalOutside } = props;
     const handleDialogClick: React.MouseEventHandler<HTMLDialogElement> = (
