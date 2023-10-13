@@ -1,0 +1,16 @@
+.floatingSidebar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 0.7rem;
+  color: #fff;
+  padding: .5rem;
+  text-decoration: none;
+}
+.floatingSidebar__item:hover {
+    background-color: #183D3D;
+}
+.floatingSidebar__item--selected {
+  background-color: #183D3D;
+}
