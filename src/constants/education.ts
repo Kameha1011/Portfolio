@@ -45,7 +45,7 @@ export const EDUCATION: ReadonlyArray<Education> = [
     alt: "AP",
     title: "Argentina Programa",
     grade: "Full Stack Web Developer",
-    certificate: "public/pdf/yoprogramocert.pdf",
+    certificate: "/pdf/yoprogramocert.pdf",
     period: "06/2022",
   },
 ] as const;

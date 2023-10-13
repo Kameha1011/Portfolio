@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
         <button
         className="header__button"
         onClick={() => {
-          downloadFile("/public/pdf/CV-OF.pdf", "CV-OF.pdf");
+          downloadFile("/pdf/CV-OF.pdf", "CV-OF.pdf");
         }}
       >
         Download CV
