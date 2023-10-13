@@ -1,20 +1,32 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { AiOutlineRight } from "react-icons/ai";
 import { ExperienceItemModal } from "./ExperienceItemModal/ExperienceItemModal";
 import { EXPERIENCES } from "../../constants/experiences";
 import { type Experience as ExperienceType } from "../../types";
 import "./Experience.css";
 export const Experience: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const modalRef = useRef<HTMLDialogElement>(null);
   const [experience, setExperience] = useState<ExperienceType>(EXPERIENCES[0]);
   const openModal = (experience: ExperienceType): void => {
     setExperience(experience);
-    setIsOpen(true);
-    document.body.style.overflow = "hidden";
+    modalRef.current?.showModal();
+    document.body.style.overflowY = "hidden";
   };
   const closeModal = (): void => {
-    setIsOpen(false);
-    document.body.style.overflow = "scroll";
+    modalRef.current?.close();
+    document.body.style.overflowY = "scroll";
+  };
+  const closeModalOutside = (e: MouseEvent): void => {
+    const dialogDimensions =
+      modalRef.current?.getBoundingClientRect() as DOMRect;
+    if (
+      e.clientX < dialogDimensions.left ||
+      e.clientX > dialogDimensions.right ||
+      e.clientY < dialogDimensions.top ||
+      e.clientY > dialogDimensions.bottom
+    ) {
+      closeModal();
+    }
   };
   return (
     <>
@@ -44,9 +56,12 @@ export const Experience: React.FC = () => {
           </div>
         </div>
       </section>
-      {isOpen && (
-        <ExperienceItemModal closeModal={closeModal} experience={experience} />
-      )}
+      <ExperienceItemModal
+        closeModal={closeModal}
+        closeModalOutside={closeModalOutside}
+        experience={experience}
+        ref={modalRef}
+      />
     </>
   );
 };
