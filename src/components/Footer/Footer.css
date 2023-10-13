@@ -25,3 +25,7 @@
   border-radius: 0.7rem;
   cursor: pointer;
 }
+.footer__button:hover{
+  background-color: #93b1a6;
+  color: #040d12;
+}

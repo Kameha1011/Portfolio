@@ -1,4 +1,5 @@
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { downloadFile } from "../../utils/downloadFile";
 import "./Footer.css";
 export const Footer: React.FC = () => {
   return (
@@ -29,7 +30,14 @@ export const Footer: React.FC = () => {
           <AiFillInstagram />
         </a>
       </div>
-      <button className="footer__button">Download CV</button>
+      <button
+        className="footer__button"
+        onClick={() => {
+          downloadFile("/src/assets/pdf/CV-OF.pdf", "CV-OF.pdf");
+        }}
+      >
+        Download CV
+      </button>
     </footer>
   );
 };

@@ -12,7 +12,7 @@ export type Education = {
   title: string;
   grade: string;
   period: MonthYear | `${MonthYear} - Present`;
-  certificate?: `https://www.${string}`;
-}
+  certificate?: `https://www.${string}` | `src/assets/pdf/${string}`;
+};
 
 export type SlideDirection = "left" | "right";

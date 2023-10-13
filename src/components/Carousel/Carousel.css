@@ -3,6 +3,7 @@
   height: 25rem;
   padding: 0.5rem;
   position: relative;
+  overflow: hidden;
 }
 .carousel__previous,
 .carousel__next {
