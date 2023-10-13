@@ -1,3 +1,4 @@
+import { downloadFile } from "../../utils/downloadFile";
 import image from "../../assets/images/omar.webp";
 import "./Header.css";
 export const Header: React.FC = () => {
@@ -21,6 +22,14 @@ export const Header: React.FC = () => {
             Inspire, Create. &quot;
           </i>
         </p>
+        <button
+        className="header__button"
+        onClick={() => {
+          downloadFile("/public/pdf/CV-OF.pdf", "CV-OF.pdf");
+        }}
+      >
+        Download CV
+      </button>
       </section>
     </header>
   );

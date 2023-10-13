@@ -2,7 +2,7 @@
   background-color: #183d3d;
   color: #fff;
   width: 22rem;
-  height: 33rem;
+  min-height: 33rem;
   z-index: 4;
   padding: 2rem;
   border-radius: 2.5rem;

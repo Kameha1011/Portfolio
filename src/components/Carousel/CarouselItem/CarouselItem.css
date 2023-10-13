@@ -22,21 +22,21 @@
   border-radius: 2.5rem;
 }
 .carousel__itemTitle{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .carousel__itemSubtitle{
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-style: italic;
 }
 .carousel__itemPeriod{
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 .carousel__itemLink{
   margin-top: 1rem;
   display: inline;
   border-radius: 1rem;
   padding: 0.9rem;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   text-decoration: none;
   background-color: #183d3d;
   color: #fff;
@@ -63,6 +63,9 @@
   .carousel__itemSubtitle{
     font-size: 2rem;
     font-style: italic;
+  }
+  .carousel__itemPeriod{
+    font-size: 1.5rem;
   }
   .carousel__itemLink{
     font-size: 1.5rem;

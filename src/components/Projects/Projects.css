@@ -143,6 +143,9 @@
   }
 }
 @media (min-width: 1024px) {
+  .projects{
+    padding: 2rem;
+  }
   .card__header {
     height: 45%;
   }
