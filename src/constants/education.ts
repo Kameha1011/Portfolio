@@ -1,8 +1,8 @@
-import uba from "../assets/images/education/uba_ing.jpg";
-import udemy from "../assets/images/education/udemy.jpg";
-import elearning1 from "../assets/images/education/e-learning1.jpg";
-import elearning2 from "../assets/images/education/e-learning2.jpg";
-import ap from "../assets/images/education/ap.jpg";
+import uba from "../assets/images/education/uba_ing.webp";
+import udemy from "../assets/images/education/udemy.webp";
+import elearning1 from "../assets/images/education/e-learning1.webp";
+import elearning2 from "../assets/images/education/e-learning2.webp";
+import ap from "../assets/images/education/ap.webp";
 import { type Education } from "../types";
 
 export const EDUCATION: ReadonlyArray<Education> = [

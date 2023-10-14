@@ -1,9 +1,9 @@
-import yelpcamp from "../assets/images/projects/yelpcamp.png";
-import fakeEcommerce from "../assets/images/projects/fakeEcommerce.png";
-import pokedex from "../assets/images/projects/pokemon.png";
-import cmLP from "../assets/images/projects/leslysocialmedia.png";
-import cardDetail from "../assets/images/projects/interactiveForm.png";
-import amazingEvents from "../assets/images/projects/amazingEvents.png";
+import yelpcamp from "../assets/images/projects/yelpcamp.webp";
+import fakeEcommerce from "../assets/images/projects/fakeEcommerce.webp";
+import pokedex from "../assets/images/projects/pokemon.webp";
+import cmLP from "../assets/images/projects/leslysocialmedia.webp";
+import cardDetail from "../assets/images/projects/interactiveForm.webp";
+import amazingEvents from "../assets/images/projects/amazingEvents.webp";
 import { FaBootstrap } from "react-icons/fa";
 import {
   SiExpress,
