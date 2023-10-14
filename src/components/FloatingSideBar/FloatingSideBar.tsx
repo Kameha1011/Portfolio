@@ -20,6 +20,8 @@ export const FloatingSideBar: React.FC = () => {
         className={`floatingSidebar__toggle ${
           open && "floatingSidebar__toggle--open"
         }`}
+        type="button"
+        aria-label="Toggle floating sidebar"
         onClick={toggleFloatingSidebar}
       >
         <IoIosArrowDroprightCircle

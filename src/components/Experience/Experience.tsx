@@ -41,7 +41,7 @@ export const Experience: React.FC = () => {
                 }`}
                 key={i}
               >
-                <h4>{experience.company}</h4>
+                <h3>{experience.company}</h3>
                 <p>{experience.period}</p>
                 <p
                   className="experience__itemLink"

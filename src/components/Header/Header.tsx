@@ -9,7 +9,7 @@ export const Header: React.FC = () => {
       </figure>
       <section className="header__body">
         <h1 className="section__title">Omar Flores</h1>
-        <h3 className="header__subtitle">Full Stack Web Developer</h3>
+        <h2 className="header__subtitle">Full Stack Web Developer</h2>
         <p>
           <i>
             &quot;Welcome to the Web Developer Portfolio. Explore a collection

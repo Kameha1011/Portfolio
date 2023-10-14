@@ -77,6 +77,7 @@ export const Contact: React.FC = () => {
                 href="https://www.linkedin.com/in/omar-flores2001/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Linkedin"
                 className="contact__link"
               >
                 <AiFillLinkedin />
@@ -85,6 +86,7 @@ export const Contact: React.FC = () => {
                 href="https://github.com/Kameha1011"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Github"
                 className="contact__link"
               >
                 <AiFillGithub />
@@ -93,6 +95,7 @@ export const Contact: React.FC = () => {
                 href="https://www.instagram.com/omrflrs01/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Instagram"
                 className="contact__link"
               >
                 <AiFillInstagram />

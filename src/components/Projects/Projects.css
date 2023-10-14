@@ -16,7 +16,7 @@
   background-color: #183d3d;
   color: #fff;
   border-radius: 0.7rem;
-  width: 80%;
+  width: 90%;
   height: 550px;
 }
 .card__header {
@@ -121,7 +121,7 @@
   border: 2px solid #93b1a6;
 }
 .card__button--github {
-  background-color: #5c8374;
+  background-color: #24352e;
   border: 2px solid #93b1a6;
 }
 .card__button--github:hover {
