@@ -12,24 +12,21 @@ export const Header: React.FC = () => {
         <h2 className="header__subtitle">Full Stack Web Developer</h2>
         <p>
           <i>
-            &quot;Welcome to the Web Developer Portfolio. Explore a collection
-            of projects, showcasing diverse skills and expertise.Unleash
-            creativity, powered by the color palette: vibrant red, deep teal,
-            lush green, warm orange, and soft peach. Navigate through the
-            journey of web development, where passion meets proficiency. Connect
-            with a world of possibilities. Let the code speak, and the designs
-            mesmerize. Embrace the art and science of web development. Engage,
-            Inspire, Create. &quot;
+            Welcome to my Portfolio! Currently steering the ship at Shiro
+            Company, my startup venture. Open to exciting job opportunities and
+            constantly tinkering with passion projects, all of which I&apos;m
+            thrilled to showcase here. Dive in and explore! Contact me anytime;
+            let&apos;s connect and make something amazing together!
           </i>
         </p>
         <button
-        className="header__button"
-        onClick={() => {
-          downloadFile("/pdf/CV-OF.pdf", "CV-OF.pdf");
-        }}
-      >
-        Download CV
-      </button>
+          className="header__button"
+          onClick={() => {
+            downloadFile("/pdf/CV-OF.pdf", "CV-OF.pdf");
+          }}
+        >
+          Download CV
+        </button>
       </section>
     </header>
   );
