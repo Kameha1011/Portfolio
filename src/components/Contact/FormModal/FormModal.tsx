@@ -34,3 +34,5 @@ export const FormModal = forwardRef<HTMLDialogElement, Props>(
     );
   }
 );
+
+FormModal.displayName = "FormModal"
