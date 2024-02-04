@@ -48,6 +48,13 @@
   background-color: #183d3d;
   color: #fff;
 }
+.carousel__itemLink:hover {
+  background-color: #5c8374;
+  color: #000;
+}
+.carousel__itemIcon{
+  vertical-align: text-bottom;
+}
 .carousel__item--active--left {
   animation: slideInLeft 1.5s ease-in forwards;
 }

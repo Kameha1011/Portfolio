@@ -1,3 +1,4 @@
+import { GoLinkExternal } from "react-icons/go";
 import { type Education } from "../../../types";
 import "./CarouselItem.css";
 interface Props {
@@ -33,7 +34,7 @@ export const CarouselItem: React.FC<Props> = ({
               rel="noreferrer"
               className="carousel__itemLink"
             >
-              See Certificate
+              See Certificate <GoLinkExternal className="carousel__itemIcon" />
             </a>
           )}
         </div>
