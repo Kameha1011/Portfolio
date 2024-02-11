@@ -44,3 +44,5 @@ export const ExperienceItemModal = forwardRef<HTMLDialogElement, Props>(
     );
   }
 );
+
+ExperienceItemModal.displayName = "ExperienceItemModal";

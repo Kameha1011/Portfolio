@@ -3,30 +3,12 @@ import { sendEmail } from "../../utils/sendEmail";
 import { FormModal } from "./FormModal/FormModal";
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import "./contact.css";
+import { useModal } from "../hook/useModal";
 
 export const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
-  const modalRef = useRef<HTMLDialogElement>(null);
-  const openModal = (): void => {
-    modalRef.current?.showModal();
-    document.body.style.overflowY = "hidden";
-  };
-  const closeModal = (): void => {
-    modalRef.current?.close();
-    document.body.style.overflowY = "scroll";
-  };
-  const closeModalOutside = (e: MouseEvent): void => {
-    const dialogDimensions =
-      modalRef.current?.getBoundingClientRect() as DOMRect;
-    if (
-      e.clientX < dialogDimensions.left ||
-      e.clientX > dialogDimensions.right ||
-      e.clientY < dialogDimensions.top ||
-      e.clientY > dialogDimensions.bottom
-    ) {
-      closeModal();
-    }
-  };
+  const { modalRef, openModal, closeModal, closeModalOutside } = useModal();
+
   const submitForm = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     sendEmail(form.current!);
@@ -105,9 +87,9 @@ export const Contact: React.FC = () => {
         </div>
       </section>
       <FormModal
+        ref={modalRef}
         closeModal={closeModal}
         closeModalOutside={closeModalOutside}
-        ref={modalRef}
       />
     </>
   );

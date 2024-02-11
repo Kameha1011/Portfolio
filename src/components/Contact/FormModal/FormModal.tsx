@@ -1,10 +1,10 @@
 import { forwardRef } from "react";
+
 interface Props {
   closeModal: () => void;
   closeModalOutside: (e: MouseEvent) => void;
   ref: React.RefObject<HTMLDialogElement>;
 }
-
 export const FormModal = forwardRef<HTMLDialogElement, Props>(
   (props: Props, ref) => {
     const { closeModal, closeModalOutside } = props;
@@ -16,8 +16,8 @@ export const FormModal = forwardRef<HTMLDialogElement, Props>(
     return (
       <dialog
         className="experienceItemModal"
-        ref={ref}
         onClick={handleDialogClick}
+        ref={ref}
       >
         <div className="experienceItemModal__header">
           <h2 className="experienceItemModal__title">Thanks You!</h2>
@@ -35,4 +35,4 @@ export const FormModal = forwardRef<HTMLDialogElement, Props>(
   }
 );
 
-FormModal.displayName = "FormModal"
+FormModal.displayName = "FormModal";
