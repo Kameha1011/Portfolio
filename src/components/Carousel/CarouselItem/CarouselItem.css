@@ -55,6 +55,9 @@
 .carousel__itemIcon{
   vertical-align: text-bottom;
 }
+.carousel__item--hidden--left, .carousel__item--hidden--right {
+  z-index: 1;
+}
 .carousel__item--active--left {
   animation: slideInLeft 1.5s ease-in forwards;
 }
@@ -93,6 +96,7 @@
 @keyframes slideOutLeft {
   from {
     transform: translateX(0%);
+    z-index: 2;
   }
   to {
     transform: translateX(-100%);
@@ -110,6 +114,7 @@
 @keyframes slideOutRight {
   from {
     transform: translateX(0%);
+    z-index: 2;
   }
   to {
     transform: translateX(100%);

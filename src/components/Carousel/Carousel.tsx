@@ -10,15 +10,15 @@ export const Carousel: React.FC = () => {
   const [slideDirection, setSlideDirection] = useState<SlideDirection>("right");
   return (
     <div className="carousel">
-       <GrPrevious
-        className="carousel__previous z-index-1"
+      <GrPrevious
+        className="carousel__previous"
         role="button"
         onClick={() => {
           activeSlide > 1 && setActiveSlide(activeSlide - 1);
           activeSlide === 1 && setActiveSlide(EDUCATION.length);
           setSlideDirection("left");
         }}
-      /> 
+      />
       <div className="carousel__itemsContainer">
         {EDUCATION.map((items, index) => {
           return (
@@ -35,12 +35,11 @@ export const Carousel: React.FC = () => {
         className="carousel__next"
         role="button"
         onClick={() => {
-          activeSlide < EDUCATION.length &&
-            setActiveSlide(activeSlide + 1);
+          activeSlide < EDUCATION.length && setActiveSlide(activeSlide + 1);
           activeSlide === EDUCATION.length && setActiveSlide(1);
           setSlideDirection("right");
         }}
-      /> 
+      />
     </div>
   );
 };
