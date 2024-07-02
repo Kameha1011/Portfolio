@@ -4,6 +4,7 @@ import pokedex from "../assets/images/projects/pokemon.webp";
 import cmLP from "../assets/images/projects/leslysocialmedia.webp";
 import cardDetail from "../assets/images/projects/interactiveForm.webp";
 import amazingEvents from "../assets/images/projects/amazingEvents.webp";
+import mytinerary from "../assets/images/projects/mytinerary.webp";
 import { FaBootstrap } from "react-icons/fa";
 import {
   SiExpress,
@@ -13,6 +14,8 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiRedux,
+  SiGooglecloud
 } from "react-icons/si";
 export const PROJECTS = [
   {
@@ -36,6 +39,21 @@ export const PROJECTS = [
     ],
     github: "https://github.com/Kameha1011/react-ecommerce",
     link: "https://react-ecommerce-eight-plum.vercel.app/",
+  },
+  {
+    title: "My Tinerary",
+    image: mytinerary,
+    technologiesIcons: [
+      { name: "Bootstrap", icon: <FaBootstrap key={1} /> },
+      { name: "React", icon: <SiReact key={2} /> },
+      { name: "Redux", icon: <SiRedux key={3} /> },
+      { name: "Mongoose", icon: <SiMongoose key={4} /> },
+      { name: "MongoDB", icon: <SiMongodb key={5} /> },
+      { name: "Express", icon: <SiExpress key={6} /> },
+      { name: "Google Cloud", icon: <SiGooglecloud key={7} /> },
+    ],
+    github: "https://github.com/Kameha1011/mytinerary-omarFlores",
+    link: "https://mytinerary-omar-flores.vercel.app/",
   },
   {
     title: "Amazing Events",
