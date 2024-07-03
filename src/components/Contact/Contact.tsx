@@ -3,7 +3,7 @@ import { sendEmail } from "../../utils/sendEmail";
 import { FormModal } from "./FormModal/FormModal";
 import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import "./contact.css";
-import { useModal } from "../hook/useModal";
+import { useModal } from "../../hook/useModal";
 
 export const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
