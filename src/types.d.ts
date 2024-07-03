@@ -16,3 +16,18 @@ export type Education = {
 };
 
 export type SlideDirection = "left" | "right";
+
+export type Project = {
+  title: string;
+  image: string;
+  technologiesIcons: {
+    name: string;
+    icon: JSX.Element;
+  }[];
+  description: string;
+  github: {
+    type: string;
+    link: string;
+  }[];
+  link: string;
+};
