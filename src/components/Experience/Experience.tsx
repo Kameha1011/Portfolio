@@ -4,7 +4,7 @@ import { ExperienceItemModal } from "./ExperienceItemModal/ExperienceItemModal";
 import { EXPERIENCES } from "../../constants/experiences";
 import { type Experience as ExperienceType } from "../../types";
 import "./Experience.css";
-import { useModal } from "../hook/useModal";
+import { useModal } from "../../hook/useModal";
 export const Experience: React.FC = () => {
   const [experience, setExperience] = useState<ExperienceType>(EXPERIENCES[0]);
   const { modalRef, openModal, closeModal, closeModalOutside } = useModal();
