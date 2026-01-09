@@ -11,7 +11,7 @@ export const EDUCATION: ReadonlyArray<Education> = [
     alt: "UBA",
     title: "Universidad de Buenos Aires",
     grade: "Computer Science Engineering",
-    period: "03/2022 - Present",
+    period: "03/2024 - Present",
   },
   {
     src: udemy,
