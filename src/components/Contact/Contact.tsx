@@ -74,7 +74,7 @@ export const Contact: React.FC = () => {
                 <AiFillGithub />
               </a>
               <a
-                href="https://www.instagram.com/omrflrs01/"
+                href="https://www.instagram.com/void__steiner/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"
